@@ -25,4 +25,4 @@ module Sinatra
   at_exit { Application.run! if $!.nil? && Application.run? }
 end
 
-include Sinatra::Delegator
+extend Sinatra::Delegator
